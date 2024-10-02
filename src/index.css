@@ -130,3 +130,55 @@ h1{
   display: flex;
   left: 20%;
 } */
+
+
+/*carrossel*/
+
+/* Estilos do carrosel*/
+/*manipulando o tamanho dos espaço dos slides*/
+.slider{ /* primeira div */
+  margin: 0 auto;
+  width: 1345px;
+  height: 300px;
+  overflow: hidden; }
+.slides{ /* segunda div */
+  width: 1345px;
+  height: 300px;
+  display: flex;
+  transition: transform 0.5s ease; }
+.slide{
+  width: 1345px;}
+/*manipulando o tamando das imagens*/
+.slide img{
+  width: 1000;
+  height: 400px;
+}
+ 
+ 
+/* manipulando posição e tamanho das bolinhas*/
+/*referente as bolinhas manuais*/
+input[type="radio"] {
+  display: none; /* Esconde o input */}
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  margin-top: 20px;
+  margin-left: 270px;
+  display: flex;
+  justify-content: center;}
+.btn-manual{
+  border: 5px solid rgb(233, 222, 222);
+  padding: 5px;
+  border-radius: 40px;
+  cursor:grab;
+  transition: 0.5s;
+  justify-content: center;}
+.btn-manual:not(:last-child){
+  margin-right: 20px;}
+.btn-manual:hover{
+  background-color: rgb(194, 20, 150);}
+/* Controla a visibilidade dos slides */
+#radio1:checked ~ .slides {
+  transform: translateX(0); /* Exibe o primeiro slide */}
+#radio2:checked ~ .slides {
+  transform: translateX(-1345px); /* Exibe o segundo slide */}
