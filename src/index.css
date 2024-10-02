@@ -181,4 +181,4 @@ input[type="radio"] {
 #radio1:checked ~ .slides {
   transform: translateX(0); /* Exibe o primeiro slide */}
 #radio2:checked ~ .slides {
-  transform: translateX(-1345px); /* Exibe o segundo slide */}
+  transform: translateX(-1745px); /* Exibe o segundo slide */}
